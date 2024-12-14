@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooppee</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background-color: #ff69b4;
+      text-align: center;
+      padding: 15px 0;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: pink;
+      padding: 10px 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      background-color: white;
+      padding: 20px;
+    }
+
+    .main-content h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      width: 150px;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      margin: 5px 0;
+    }
+
+    .product-card input[type="number"] {
+      width: 40px;
+      padding: 5px;
+    }
+
+    .product-card button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .product-card button:hover {
+      background-color: #218838;
+    }
+
+    .footer {
+      background-color: #ff69b4;
+      height: 20px;
+    }
+    @media (max-width: 768px) {
+      .products {
+        flex-wrap: wrap;
+      }
+
+      .product-card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">SHOOPPEE</div>
+  <div class="navbar">
+    <a href="index.html">HOMEPAGE</a>
+    <a href="#">ABOUT US</a>
+    <a href="#">PRODUCTS</a>
+    <a href="#">SIGN UP</a>
+  </div>
+  <div class="main-content">
+    <h1>Online Shopping</h1>
+    <div class="products">
+      <div class="product-card">
+        <p>Product Image</p>
+        <p><strong>Product Name:</strong></p>
+        <p>Price:</p>
+        <p>QTY: <input type="number" value="1"></p>
+        <button>Add</button>
+      </div>
+      <div class="product-card">
+        <p>Product Image</p>
+        <p><strong>Product Name:</strong></p>
+        <p>Price:</p>
+        <p>QTY: <input type="number" value="1"></p>
+        <button>Add</button>
+      </div>
+      <div class="product-card">
+        <p>Product Image</p>
+        <p><strong>Product Name:</strong></p>
+        <p>Price:</p>
+        <p>QTY: <input type="number" value="1"></p>
+        <button>Add</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+</body>
+</html>
